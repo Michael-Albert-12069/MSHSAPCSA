@@ -1,6 +1,7 @@
 package com.michael.nettools;
 
 import java.io.DataInputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.ServerSocket;
@@ -9,8 +10,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String []args) throws Exception {
+//        LocalStorage messageSrvr = new LocalStorage(new File("/home/nautilus/MSHS_AP_CSA/MSHSAPCSA/Webchat_Server/webchat2.srvr"));
         Server s = new Server(getNumber("Port Number: "));
         s.startServer();
+
 
 
     }

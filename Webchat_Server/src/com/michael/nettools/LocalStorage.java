@@ -55,14 +55,14 @@ public class LocalStorage {
 
 
 
-    private String getLine(int lineNumber) throws FileNotFoundException {
+    public Line getLine(int lineNumber) throws FileNotFoundException {
         Scanner scanner = new Scanner((storageFile));
         int i = 0;
         while (scanner.hasNextLine() && i < lineNumber){
             i++;
             scanner.nextLine();
         }
-        return scanner.nextLine();
+        return new Line(scanner.nextLine());
     }
 
     private void append(String s) throws IOException {

@@ -1,6 +1,7 @@
 package com.michael.nettools;
 
 import java.io.DataInputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.ServerSocket;
@@ -8,9 +9,10 @@ import java.net.Socket;
 
 public class Server {
     int port;
-    LocalStorage messageVault = new LocalStorage();
+    LocalStorage messageVault;
     public Server(int port) throws IOException {
         this.port = port;
+        messageVault = new LocalStorage(new File("/home/nautilus/MSHS_AP_CSA/MSHSAPCSA/Webchat_Server/webchat2.srvr"));
     }
     public void startServer() throws Exception {
 
@@ -40,5 +42,6 @@ public class Server {
     private void onInput(String message, int port, String address) throws Exception{
 
         messageVault.store(address, Integer.toString(port), message);
+
     }
 }
