@@ -32,6 +32,8 @@ public class Server {
         String address = socket.getInetAddress().toString();
         onInput(message, sPort, address);
         System.out.println("\"" + message + "\"");
+        MessageDecryptor y = new MessageDecryptor(message);
+        System.out.println(y.getMessage());
 
 
         System.out.println("---end---" + "\n" + "\n");

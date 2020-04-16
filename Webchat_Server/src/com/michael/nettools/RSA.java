@@ -51,29 +51,29 @@ public class RSA {
         return ((p-1)*(q-1));
     }
     public static void primeFactorization(int n){
-            // Print the number of 2s that divide n
-            while (n%2==0)
-            {
-                System.out.print(2 + " ");
-                n /= 2;
-            }
+        // Print the number of 2s that divide n
+        while (n%2==0)
+        {
+            System.out.print(2 + " ");
+            n /= 2;
+        }
 
-            // n must be odd at this point.  So we can
-            // skip one element (Note i = i +2)
-            for (int i = 3; i <= Math.sqrt(n); i+= 2)
+        // n must be odd at this point.  So we can
+        // skip one element (Note i = i +2)
+        for (int i = 3; i <= Math.sqrt(n); i+= 2)
+        {
+            // While i divides n, print i and divide n
+            while (n%i == 0)
             {
-                // While i divides n, print i and divide n
-                while (n%i == 0)
-                {
-                    System.out.print(i + " ");
-                    n /= i;
-                }
+                System.out.print(i + " ");
+                n /= i;
             }
+        }
 
-            // This condition is to handle the case whien
-            // n is a prime number greater than 2
-            if (n > 2)
-                System.out.print(n);
+        // This condition is to handle the case whien
+        // n is a prime number greater than 2
+        if (n > 2)
+            System.out.print(n);
 
     }
 
@@ -81,9 +81,9 @@ public class RSA {
         return (int) (Math.pow(c, e) % n);
     }
 
-    public BigInteger decrypt(int c){
+    public int decrypt(int c){
         BigInteger message = BigInteger.valueOf(c);
-        return  (message.pow(d).mod(BigInteger.valueOf(n)));
+        return  (message.pow(d).mod(BigInteger.valueOf(n))).intValue();
     }
     static void decode(String s, int index, byte[] decode, int size) {
         if (index >= s.length())
@@ -100,5 +100,26 @@ public class RSA {
 
     static void decode(String s) {
         decode(s, 0, new byte[s.length()], 0);
+    }
+
+    public static int nthPrime(int n){
+        n ++;
+        int number = 2;
+        while (n > 1){
+            if (isPrime(number)){
+                n--;
+            }
+            number++;
+        }
+        return number-1;
+    }
+
+    public static boolean isPrime(int i){
+        for (int j = 2; j < i; j++) {
+            if (i % j == 0){
+                return false;
+            }
+        }
+        return true;
     }
 }
