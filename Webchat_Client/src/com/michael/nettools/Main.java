@@ -6,15 +6,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        IPAddress address = new IPAddress(getAnswer("IP Address: "));
-        int port = getNumber("Port Number: ");
+        //IPAddress address = new IPAddress(getAnswer("IP Address: "));
+        //int port = getNumber("Port Number: ");
+        IPAddress address = new IPAddress("192.168.1.11");
+        int port = 17487;
         Client connection = new Client(address, port);
         while (true){
             String message = getAnswer("Message: ");
             if (message.equals("<exit>")){System.exit(0);}
-            connection.sendMessage(message);
-            clearScreen();
-            Thread.sleep(1000);
+                String output = "";
+                MessageEncryptor x = new MessageEncryptor(message);
+                connection.sendMessage(x.getMessage());
+                clearScreen();
+                Thread.sleep(1000);
         }
 
     }

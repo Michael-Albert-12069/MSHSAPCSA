@@ -10,6 +10,7 @@ public class IPAddress {
         }else{
             Addr = Address;
         }
+        System.out.println(Address);
     }
 
     public int getOctet(int i){
