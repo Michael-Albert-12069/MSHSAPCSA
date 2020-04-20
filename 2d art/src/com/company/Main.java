@@ -1,25 +1,38 @@
 package com.company;
 import java.awt.Graphics;
 import java.awt.Color;
+import java.util.ArrayList;
+import java.util.Random;
+import javax.imageio.ImageTranscoder;
 import javax.swing.*;
 
 public class Main extends JPanel {
     public static int screenHeight = 750;
     public static int screenWidth = 1000;
-    public static PhysObject object;
+    public static ArrayList<BouncyBall> balls = new ArrayList<>();
 
 
     //Draws whatever you want.
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-        g.setColor(Color.RED);
-        g.fillOval(object.x, object.y, object.blockHeight, object.blockHeight);
+        for (BouncyBall ball: balls) {
+            g.setColor(ball.ballColor);
+            g.fillOval(ball.x, ball.y, ball.blockHeight, ball.blockHeight);
+        }
+
 
     }
 
     public static void main(String[] args) throws InterruptedException {
-        object = new PhysObject(100, 0);
-        object.setBlockHeight(25);
+        for (int i = 0; i < 10; i++) {
+            Random rand = new Random();
+            balls.add(new BouncyBall(rand.nextInt(screenWidth), 0));
+            balls.get(i).setBlockHeight((int) 25);
+            //balls.get(i).gravity = -1 *( new Random().nextInt(10)/2 + 1);
+            balls.get(i).gravity = -1 ;
+
+        }
+
         JFrame jf = new JFrame("Cell Spread");
         Main m = new Main();
         jf.setSize(screenWidth,screenHeight + 50);
@@ -28,30 +41,12 @@ public class Main extends JPanel {
         jf.add(m);
         m.repaint();
         Thread.sleep(1000);
-        object.velocity = 1;
-        while (object.velocity != 0) {
-            while (object.y + object.blockHeight * 2 + (object.time * object.gravity) < screenHeight) { // while above ground
-                object.y += object.getVelocity(); // accelerate
-                m.repaint();
-                try {
-                    Thread.sleep(20);
-                } catch (InterruptedException e) {
-                    System.out.println("got interrupted!");
-                }
-            }
-            object.setVelocity(-1 * object.getVelocity());
-            int bouncetime = 0;
-            while (object.velocity < 0) { // while rebounding
-                object.y += object.getVelocity() / 2;
-                bouncetime++;
-                m.repaint();
-                try {
-                    Thread.sleep(20);
-                } catch (InterruptedException e) {
-                    System.out.println("got interrupted!");
-                }
-            }
+        for (BouncyBall ball: balls) {
+            ball.startBouncing(m, .55);
+            Thread.sleep((long) (Math.random() * 10));
         }
 
     }
+
+
 }
