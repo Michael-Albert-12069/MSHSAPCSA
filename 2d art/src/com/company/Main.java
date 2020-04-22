@@ -7,34 +7,32 @@ import javax.imageio.ImageTranscoder;
 import javax.swing.*;
 
 public class Main extends JPanel {
-    public static int screenHeight = 200;
-    public static int screenWidth = 500;
-    public static CellPanel cells;
+    public static int screenHeight = 750;
+    public static int screenWidth = 1000;
+    public static ArrayList<BouncyBall> balls = new ArrayList<>();
+
 
     //Draws whatever you want.
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-        for (int i = 0; i < cells.cells.length; i++) {
-            for (int j = 0; j < cells.cells[i].length; j++) {
-                boolean cell = cells.cells[i][j];
-                if (cells.cells[i][j]){
-                    g.setColor(Color.BLACK);
-                    g.drawRect(j, i, 1, 1);
-                }else{
-                    g.setColor(Color.GRAY);
-                    g.drawRect(j, i, 1, 1);
-                }
-                cells.cells[i][j] = cell;
-            }
+        for (BouncyBall ball: balls) {
+
+            g.setColor(ball.ballColor);
+            g.fillOval(ball.x, ball.y, ball.blockHeight, ball.blockHeight);
         }
+
+
     }
 
     public static void main(String[] args) throws InterruptedException {
-        cells = new CellPanel(screenWidth, 200);
-        cells.makeRandomActive();
-        cells.makeRandomActive();
-        cells.makeRandomActive();
+        for (int i = 0; i < 10; i++) {
+            Random rand = new Random();
+            balls.add(new BouncyBall(rand.nextInt(screenWidth), 0));
+            balls.get(i).setBlockHeight(new Random().nextInt(70) + 30);
+            //balls.get(i).gravity = -1 *( new Random().nextInt(10)/2 + 1);
+            balls.get(i).gravity = -1 ;
 
+        }
 
         JFrame jf = new JFrame("Cell Spread");
         Main m = new Main();
@@ -44,10 +42,10 @@ public class Main extends JPanel {
         jf.add(m);
         m.repaint();
         Thread.sleep(1000);
-        while (true){
-            cells.age();
-            m.repaint();
-            Thread.sleep(20);
+        for (BouncyBall ball: balls) {
+            ball.startBouncing(m, .69);
+            ball.startDeflecting(m);
+            Thread.sleep((long) (new Random().nextInt(40) + 10));
         }
 
     }
