@@ -43,7 +43,7 @@ public class Main extends JPanel {
         m.repaint();
         Thread.sleep(1000);
         for (BouncyBall ball: balls) {
-            ball.startBouncing(m, .69);
+            ball.startBouncing(m, .99);
             ball.startDeflecting(m);
             Thread.sleep((long) (new Random().nextInt(40) + 10));
         }

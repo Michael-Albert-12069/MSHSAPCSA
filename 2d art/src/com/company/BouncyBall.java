@@ -98,6 +98,7 @@ class ThreadedBounce implements Runnable {
                     Thread.sleep(diffconst);
                 }
             }
+            System.exit(0);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -124,23 +125,16 @@ class BallsBounce implements Runnable {
                     if (ball.isTouching(bball) && ball.x > bball.x){
                         ball.xVelocity ++;
 
-                        if (ball.xVelocity > 0){
-                            ball.xVelocity -= (ball.xVelocity * friction);
-                        }
-                        if (ball.xVelocity < 0){
-                            ball.xVelocity += (ball.xVelocity * friction);
-                        }
 
                     }else if (ball.isTouching(bball) && ball.x < bball.x){
                         ball.xVelocity --;
-                        if (ball.xVelocity > 0){
-                            ball.xVelocity -= (ball.xVelocity * friction);
-                        }
-                        if (ball.xVelocity < 0){
-                            ball.xVelocity += (ball.xVelocity * friction);
-                        }
+
 
                     }
+                    if (ball.x + ball.xVelocity <=0 || ball.x + ball.xVelocity >= screenWidth){
+                        ball.xVelocity *= -1;
+                    }
+//                    alterVelocity(ball);
                     ball.x += ball.xVelocity;
                     Thread.sleep(diffconst);
                     m.repaint();
@@ -149,6 +143,13 @@ class BallsBounce implements Runnable {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    public void alterVelocity(BouncyBall ball){
+        int sign = ball.xVelocity / Math.abs(ball.xVelocity);
+        int velocity = Math.abs(ball.xVelocity);
+        velocity = (int) (velocity * (1-friction));
+        ball.xVelocity = velocity * sign;
     }
 
 }
