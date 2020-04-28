@@ -25,12 +25,10 @@ public class Main extends JPanel {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 1; i++) {
             Random rand = new Random();
-            balls.add(new BouncyBall(rand.nextInt(screenWidth), 0));
+            balls.add(new BouncyBall(rand.nextInt(screenWidth), 100));
             balls.get(i).setBlockHeight(new Random().nextInt(70) + 30);
-            //balls.get(i).gravity = -1 *( new Random().nextInt(10)/2 + 1);
-            balls.get(i).gravity = -1 ;
 
         }
 
@@ -43,8 +41,7 @@ public class Main extends JPanel {
         m.repaint();
         Thread.sleep(1000);
         for (BouncyBall ball: balls) {
-            ball.startBouncing(m, .99);
-            ball.startDeflecting(m);
+            ball.startOscillation(m);
             Thread.sleep((long) (new Random().nextInt(40) + 10));
         }
 
