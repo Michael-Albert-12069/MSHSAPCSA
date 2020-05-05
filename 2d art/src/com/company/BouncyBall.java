@@ -101,6 +101,7 @@ class yOscillation extends Thread{
         return (getRounded(y));
     }
     public double getX(){
+
         double x = amp * (Math.cos((time + (per/4.0)) * a));
         return (getRounded(x));
     }

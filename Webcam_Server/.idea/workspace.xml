@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Webchat_Server:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3da24175-bf9f-4471-a66c-368872ea557d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1aQaxuSgWECJP2R7NQeUDJvuOPU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/michael/nettools" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.michael.nettools" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Shared drives\School_LaptopBridge\MSHSAPCSA\Webcam_Server\src\com\michael\nettools" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.michael.nettools.Main" />
+      <module name="Webchat_Server" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3da24175-bf9f-4471-a66c-368872ea557d" name="Default Changelist" comment="" />
+      <created>1586670520454</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586670520454</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="178" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586970061668">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state x="178" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.852@0.0.1440.852" timestamp="1586970061668" />
+    <state x="452" y="218" width="525" height="416" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586970053212">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state x="452" y="218" width="525" height="416" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.852@0.0.1440.852" timestamp="1586970053212" />
+    <state x="504" y="187" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586970556848">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state x="504" y="187" width="424" height="484" key="FileChooserDialogImpl/0.0.1440.852@0.0.1440.852" timestamp="1586970556848" />
+    <state width="1552" height="211" key="GridCell.Tab.0.bottom" timestamp="1587016973987">
+      <screen x="0" y="0" width="1600" height="852" />
+    </state>
+    <state width="1392" height="211" key="GridCell.Tab.0.bottom/0.0.1440.852@0.0.1440.852" timestamp="1586971611624" />
+    <state width="1552" height="211" key="GridCell.Tab.0.bottom/0.0.1600.852@0.0.1600.852" timestamp="1587016973987" />
+    <state width="1552" height="211" key="GridCell.Tab.0.center" timestamp="1587016973986">
+      <screen x="0" y="0" width="1600" height="852" />
+    </state>
+    <state width="1392" height="211" key="GridCell.Tab.0.center/0.0.1440.852@0.0.1440.852" timestamp="1586971611618" />
+    <state width="1552" height="211" key="GridCell.Tab.0.center/0.0.1600.852@0.0.1600.852" timestamp="1587016973986" />
+    <state width="1552" height="211" key="GridCell.Tab.0.left" timestamp="1587016973985">
+      <screen x="0" y="0" width="1600" height="852" />
+    </state>
+    <state width="1392" height="211" key="GridCell.Tab.0.left/0.0.1440.852@0.0.1440.852" timestamp="1586971611617" />
+    <state width="1552" height="211" key="GridCell.Tab.0.left/0.0.1600.852@0.0.1600.852" timestamp="1587016973985" />
+    <state width="1552" height="211" key="GridCell.Tab.0.right" timestamp="1587016973986">
+      <screen x="0" y="0" width="1600" height="852" />
+    </state>
+    <state width="1392" height="211" key="GridCell.Tab.0.right/0.0.1440.852@0.0.1440.852" timestamp="1586971611618" />
+    <state width="1552" height="211" key="GridCell.Tab.0.right/0.0.1600.852@0.0.1600.852" timestamp="1587016973986" />
+    <state x="209" y="7" width="1024" height="845" key="SettingsEditor" timestamp="1586970591272">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state x="209" y="7" width="1024" height="845" key="SettingsEditor/0.0.1440.852@0.0.1440.852" timestamp="1586970591272" />
+    <state x="141" y="28" width="1307" height="796" key="new project wizard" timestamp="1587014601279">
+      <screen x="0" y="0" width="1600" height="852" />
+    </state>
+    <state x="141" y="28" width="1307" height="796" key="new project wizard/0.0.1600.852@0.0.1600.852" timestamp="1587014601279" />
+  </component>
+</project>

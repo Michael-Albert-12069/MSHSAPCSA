@@ -1,26 +1,36 @@
 package com.michael.nettools;
 
+import com.michael.nettools.connectivity.Client;
+import com.michael.nettools.connectivity.IPAddress;
+import com.michael.nettools.connectivity.InvalidIPAddress;
+
 import java.util.Scanner;
 
 
 public class Main {
-    public static void main(String[] args) throws Exception {
 
-        //IPAddress address = new IPAddress(getAnswer("IP Address: "));
-        //int port = getNumber("Port Number: ");
+    public static IPAddress ipAddress;
+    public static int port;
+
+    public static void main(String[] args) throws Exception {
+        ipAddress = new IPAddress(getAnswer("IP Address: "));
+        port = getNumber("port#: ");
+
+
+    }
+
+    public static void sendMessage() throws Exception {
         IPAddress address = new IPAddress("192.168.1.11");
         int port = 17487;
         Client connection = new Client(address, port);
         while (true){
             String message = getAnswer("Message: ");
             if (message.equals("<exit>")){System.exit(0);}
-                String output = "";
-                MessageEncryptor x = new MessageEncryptor(message);
-                connection.sendMessage(x.getMessage());
-                clearScreen();
-                Thread.sleep(1000);
-        }
 
+            connection.sendMessage("");
+            clearScreen();
+            Thread.sleep(1000);
+        }
     }
 
 
@@ -85,5 +95,6 @@ public class Main {
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
+
     }
 }
