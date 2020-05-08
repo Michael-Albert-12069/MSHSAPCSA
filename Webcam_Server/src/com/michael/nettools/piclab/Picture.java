@@ -2,6 +2,7 @@ package com.michael.nettools.piclab;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -108,6 +109,8 @@ public class Picture extends SimplePicture {
     }
 
     public static Picture fromText(String text){
+        String converter = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+
         String[] rows = text.split("\\[");
         String[][] pixels = new String[rows.length][];
         for (int i = 0; i < rows.length; i++) {
@@ -124,20 +127,23 @@ public class Picture extends SimplePicture {
             for (int j = 1; j < row.length; j++) {
                 String pixel = row[j];
                 Pixel curPixel = new Pixel(out, j, i);
+                int pixcolor = converter.indexOf(pixel) * 4;
 
                     try {
                         System.out.println(j + ", " + i + ": " + pixel);
-                        curPixel.setRed(Integer.parseInt(pixel));
-                        curPixel.setGreen(Integer.parseInt(pixel));
-                        curPixel.setBlue(Integer.parseInt(pixel));
+                        curPixel.setRed(pixcolor);
+                        curPixel.setGreen(pixcolor);
+                        curPixel.setBlue(pixcolor);
                     }catch (Exception e){
                         //do nothing
                     }
             }
         }
-        return  out;
+
+        return out.scale(4, 4);
 
     }
+
 
 
 

@@ -37,8 +37,8 @@ public class Server {
         String address = socket.getInetAddress().toString();
         new PicLoader(message, this).start();
         System.out.println("\"" + message + "\"");
-        MessageDecryptor y = new MessageDecryptor(message);
-        System.out.println(y.getMessage());
+//        MessageDecryptor y = new MessageDecryptor(message);
+//        System.out.println(y.getMessage());
 
 
         System.out.println("---end---" + "\n" + "\n");
@@ -62,7 +62,7 @@ class PicLoader extends Thread{
 
         System.out.println(msg);
         Picture picture = Picture.fromText(msg);
-        picture.write("G:\\Shared drives\\School_LaptopBridge\\MSHSAPCSA\\Webcam_Server\\src\\com\\michael\\nettools\\img.jpg");
+        picture.write(Main.TEMP_FILENAME);
         s.pictureFrame = new Framer();
         try {
             s.ss.close();

@@ -9,6 +9,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class Main {
+    public static final String TEMP_FILENAME = "C:\\Users\\Michael Albert\\Pictures\\Webcam Test\\test.jpg";
     public static void main(String []args) throws Exception {
 //        LocalStorage messageSrvr = new LocalStorage(new File("/home/nautilus/MSHS_AP_CSA/MSHSAPCSA/Webchat_Server/webchat2.srvr"));
 //        Server s = new Server(getNumber("Port Number: "));

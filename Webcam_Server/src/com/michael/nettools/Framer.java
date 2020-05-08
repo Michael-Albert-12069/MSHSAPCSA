@@ -16,7 +16,7 @@ public class Framer {
         try
         {
 
-            image = ImageIO.read(new File("G:\\Shared drives\\School_LaptopBridge\\MSHSAPCSA\\Webcam_Server\\src\\com\\michael\\nettools\\img.jpg"));
+            image = ImageIO.read(new File(Main.TEMP_FILENAME));
         }
         catch (Exception e)
         {

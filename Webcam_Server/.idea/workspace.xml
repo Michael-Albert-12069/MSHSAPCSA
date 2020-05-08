@@ -25,7 +25,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da24175-bf9f-4471-a66c-368872ea557d" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/michael/nettools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -63,18 +62,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Shared drives\School_LaptopBridge\MSHSAPCSA\Webcam_Server\src\com\michael\nettools" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -110,51 +97,60 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="178" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586970061668">
-      <screen x="0" y="0" width="1440" height="852" />
+    <state x="198" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588828444256">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="178" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.852@0.0.1440.852" timestamp="1586970061668" />
+    <state x="198" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1588828444256" />
     <state x="452" y="218" width="525" height="416" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586970053212">
       <screen x="0" y="0" width="1440" height="852" />
     </state>
     <state x="452" y="218" width="525" height="416" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.852@0.0.1440.852" timestamp="1586970053212" />
+    <state x="530" y="176" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588830627274">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="530" y="176" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1588830627274" />
     <state x="504" y="187" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586970556848">
       <screen x="0" y="0" width="1440" height="852" />
     </state>
     <state x="504" y="187" width="424" height="484" key="FileChooserDialogImpl/0.0.1440.852@0.0.1440.852" timestamp="1586970556848" />
-    <state width="1552" height="211" key="GridCell.Tab.0.bottom" timestamp="1587016973987">
-      <screen x="0" y="0" width="1600" height="852" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1588832071459">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1392" height="211" key="GridCell.Tab.0.bottom/0.0.1440.852@0.0.1440.852" timestamp="1586971611624" />
     <state width="1552" height="211" key="GridCell.Tab.0.bottom/0.0.1600.852@0.0.1600.852" timestamp="1587016973987" />
-    <state width="1552" height="211" key="GridCell.Tab.0.center" timestamp="1587016973986">
-      <screen x="0" y="0" width="1600" height="852" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1588832071459" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1588832071459">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1392" height="211" key="GridCell.Tab.0.center/0.0.1440.852@0.0.1440.852" timestamp="1586971611618" />
     <state width="1552" height="211" key="GridCell.Tab.0.center/0.0.1600.852@0.0.1600.852" timestamp="1587016973986" />
-    <state width="1552" height="211" key="GridCell.Tab.0.left" timestamp="1587016973985">
-      <screen x="0" y="0" width="1600" height="852" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1588832071459" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1588832071459">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1392" height="211" key="GridCell.Tab.0.left/0.0.1440.852@0.0.1440.852" timestamp="1586971611617" />
     <state width="1552" height="211" key="GridCell.Tab.0.left/0.0.1600.852@0.0.1600.852" timestamp="1587016973985" />
-    <state width="1552" height="211" key="GridCell.Tab.0.right" timestamp="1587016973986">
-      <screen x="0" y="0" width="1600" height="852" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1588832071459" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1588832071459">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1392" height="211" key="GridCell.Tab.0.right/0.0.1440.852@0.0.1440.852" timestamp="1586971611618" />
     <state width="1552" height="211" key="GridCell.Tab.0.right/0.0.1600.852@0.0.1600.852" timestamp="1587016973986" />
-    <state x="209" y="7" width="1024" height="845" key="SettingsEditor" timestamp="1586970591272">
-      <screen x="0" y="0" width="1440" height="852" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1588832071459" />
+    <state x="232" y="7" width="1024" height="845" key="SettingsEditor" timestamp="1588828457434">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="209" y="7" width="1024" height="845" key="SettingsEditor/0.0.1440.852@0.0.1440.852" timestamp="1586970591272" />
+    <state x="232" y="7" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1588828457434" />
     <state x="141" y="28" width="1307" height="796" key="new project wizard" timestamp="1587014601279">
       <screen x="0" y="0" width="1600" height="852" />
     </state>
